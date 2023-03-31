@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bank-details-wrapper{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid gold; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.bankdetails-header{
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.bankdetails-header .add-details{
+    color: black;
+    font-weight: 700;
+    text-align: start;
+}
+.bankdetails-header span{
+    color: blue;
+    font-size: .8rem;
+    /* border: 2px solid black; */
+    text-align: end;
+}
+.ac-details{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin-top: 1rem;
+    /* height: 55vh; */
+}
+.add-details-info{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-field{
+    /* border: 2px solid black; */
+    /* height: 10vh; */
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.input-field label{
+    font-size: .7rem;
+}
+.input-field input::placeholder{
+    font-size: .7rem;
+}
+.input-field .detail{
+    position: absolute;
+    top: -10px;
+    z-index: 100;
+}
+ input{
+    outline: none;
+    border-radius: .5rem;
+    width: 80%;
+    border: 2px solid #bebebe;
+    height: 5vh;
+    margin-bottom: .7rem;
+    color: #a6a6a6;
+    padding: 0 1rem;
+}
+.check-box{
+    height: 20px;
+    width: 20px;
+    margin-right: .5rem;
+}
+.save-ac{
+    width: 87%;
+    display: flex;
+    color: #676767;
+}
+.add-bank-ac{
+    position: absolute;
+    width: 90%;
+    background-color: #ffcd6c;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 10%;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    bottom: 1rem;
+}
+
+@media(max-width:600px){
+    .bank-details-wrapper{
+        height: 80%;
+        /* border: 2px solid red; */
+        background-color: #f9f8f5;
+        animation: anim .2s linear;
+    }
+    .bankdetails-header,  .add-details-info{
+        background-color: transparent;
+    }
+    .add-details-info span{
+        background-color: transparent;
+    }
+    .ac-details, .input-field, label, .save-ac{
+        background-color: transparent;
+    }
+    @keyframes anim {
+        0%{
+            transform: translateX(-250px);
+        }
+        50%{
+            transform: translateX(-125px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+}

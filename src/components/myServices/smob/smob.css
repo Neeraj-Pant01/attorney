@@ -1,0 +1,160 @@
+
+.services-cont{
+    position: absolute;
+    top: 14.5vh;
+    left: 18%;
+    width: 82%;
+    min-height:84.5%;
+    display: flex;
+    background-color: #f1f2f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+.services{
+    border-radius: 1rem;
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    min-height: 90%;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 10px #888888;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+}
+.services-top{
+    position: relative;
+    width: 90%;
+    height: 20vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.services-top .YOUR_SERVICES{
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+.edit-btn{
+    position: absolute;
+    right: 0px;
+    background-color: #ffcd6c;
+    width: 120px;
+    height: 50px;
+    border-radius: .4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    float: right;
+    top: 0px;
+    display: block;
+    margin-top: 1rem;
+}
+.edit-btn a{
+    color: black;
+    background-color: #ffcd6c;
+    text-decoration: none;
+}
+hr{
+    width: 20%;
+    height: 2px;
+    background-color: #c1945c;
+    border-radius: 2rem;
+}
+p{
+    text-align: center;
+    width: 70%;
+    color: #8b9b9f;
+    word-spacing: 5px;
+}
+.service-options{
+    margin-top: 1rem;
+    width: 70%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.service-option{
+    margin: 2rem;
+    flex: 2;
+    border: 2px solid #8b9b9f;
+    height: 20vh;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.service-option p{
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+}
+.sexual-crimes, .internet-crimes{
+    width: 30%;
+}
+.bail{
+    font-size: 3.5rem;
+    color: #edb155
+}
+.addidtinal-services-title{
+    margin-top: .5rem;
+    width: 90%;
+    height: 10vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-btn{
+    background-color: #ffcd6c;
+    width: 120px;
+    height: 50px;
+    border-radius: .4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.title-box{
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13rem;
+}
+.title-box .YOUR-ADDITIONAL-SERVICES{
+    font-size: 1.9rem;
+    font-weight: 400;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.title-box hr{
+    margin-top: .5rem;
+    width: 10vw;
+}
+.advanced-service-options{
+    margin-top: 1rem;
+    width: 70%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.SERVICES-MOBILE{
+    display: none;
+}

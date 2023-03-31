@@ -1,0 +1,199 @@
+.footer{
+    width: 100vw;
+    height: 43vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+    background-color: #191A1F;
+}
+.footer-logo-wrapper{
+    height: 90%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    background-color: #191A1F;
+}
+.footer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.footer-img img{
+    width: 200px;
+    background-color: transparent;
+}
+.footer-info{
+    margin-top: 2rem;
+    text-align: center;
+    color: #D1D1D1;
+    background-color: transparent;
+    width: 70%;
+}
+.footer-info p{
+    background-color: transparent;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    text-align: center;
+}
+.footer-contact{
+    flex: 3;
+    /* border: 2px solid yellow; */
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.footer-contact h1{
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+.footer-links{
+    flex: 3;
+    /* border: 2px solid yellow; */
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+.links{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid white;
+    height: 21vh;
+    width: 20%;
+    text-align: center;
+    background-color: transparent;
+}
+.footer-links a{
+    text-decoration: none;
+    padding: .5rem;
+    color: white;
+    background-color: transparent;
+}
+.email{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+.email-id{
+    color: #D1D1D1;
+    background-color: transparent;
+}
+.footer-email{
+    background-color: transparent;
+}
+.mob-footer{
+    display: none;
+}
+.copyrights{
+    width: 100%;
+    background-color: #191A1F;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights p{
+    background-color: #191A1F;
+    border-top: 1px solid #E3E3E3;
+    width: 70%;
+    padding: 1rem 0rem 2rem 0rem;
+    font-size: .8rem;
+}
+
+
+@media(max-width:600px){
+
+    .footer{
+        height: 70vh;
+        flex-direction: column;
+    }
+    .footer-info{
+        /* border: 2px solid wheat; */
+        width: 100%;
+    }
+    .footer-info p{
+        /* border: 2px solid yellow; */
+        width: 100%;
+    }
+    .footer-contact{
+        /* border: 2px solid white; */
+        width: 80%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .footer-contact h1{
+    border-bottom: 1px solid rgb(104, 106, 109);
+    }
+    .email{
+        font-size: 1.2rem;
+        color: white;
+        padding-left: 0%;
+        text-align: left;
+    }
+    .email-id{
+        color: #D1D1D1; ;
+    }
+    .footer-links{
+        width: 80%;
+        align-items: flex-start;
+
+    }
+    .footer-links p{
+        /* border: 2px solid red; */
+        padding: 0;
+    }
+    .footer-links a{
+        text-align: left;
+        font-size: .7rem;
+        display: flex;align-items:center;
+        justify-content: flex-start;
+        border: 1px solid yellow;
+        margin-top: .7rem;
+    }
+    .links{
+        display: block;
+        font-size: 1.2rem;
+        height: 90vh;
+        color: white;
+        border-bottom: 1px solid rgb(104, 106, 109);
+        width: 70%;
+        text-align: left;
+    }
+    .footer-contact h1{
+        width: 70%;
+        text-align: left;
+        padding-bottom: .5rem;
+        /* border: 2px solid green; */
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+    .mob-footer{
+        margin: 3rem 0rem 2rem 0rem;
+        display: flex;
+        width: 90%;
+        background-color: #191A1F;
+        height: 6vh;
+        color: white;
+        font-size: .7rem;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-bottom: 1px solid rgb(104, 106, 109);
+    }
+    .footer-img img{
+        width: 150px;
+    }
+}

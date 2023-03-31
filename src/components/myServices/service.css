@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.services-wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.services-cont{
+    width:100vw;
+    border: 2px solid yellow;
+    display: flex;
+    margin-top: 14vh;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* position: absolute;
+    top: 14.5vh;
+    left: 18%;
+    width: 82%;
+    min-height:84.5%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #f1f2f6;
+    /* border: 2px solid blue; */
+}
+.services{
+    border-radius: .5rem;
+    min-height: 90%;
+    box-shadow: 0px 0px 10px #888888;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    /* border: 2px solid red; */
+    max-width: 70%;
+    margin-left: 22%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    transition-delay: .5s;
+    transition:  all 1s linear;
+}
+.services-sidebar-WRAPPER{
+    /* position: fixed; */
+    /* border: 2px solid green; */
+    width: 40%;
+    margin-right: 2rem;
+    max-height: 95%;
+    margin-left: 1.5rem;
+}
+.services-top{
+    position: relative;
+    width: 90%;
+    height: 20vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.services-top .YOUR_SERVICES{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: black;
+}
+.p-desc{
+    font-size: .8rem;
+}
+.edit-btn{
+    position: absolute;
+    right: 0px;
+    background-color: #ffcd6c;
+    width: 120px;
+    height: 50px;
+    border-radius: .4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    float: right;
+    top: 0px;
+    display: block;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.edit-btn a{
+    color: black;
+    background-color: #ffcd6c;
+    text-decoration: none;
+}
+hr{
+    width: 20%;
+    height: 2px;
+    background-color: #c1945c;
+    border-radius: 2rem;
+}
+.service-options{
+    margin-top: 1rem;
+    /* border: 2px solid black; */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    width: 70%;
+}
+.service-option{
+    margin: 2rem;
+    flex: 2;
+    border: 2px solid #8b9b9f;
+    height: 20vh;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.service-option p{
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+}
+.sexual-crimes, .internet-crimes{
+    width: 30%;
+}
+.bail{
+    font-size: 3.5rem;
+    color: #edb155
+}
+.addidtinal-services-title{
+    margin-top: .5rem;
+    width: 90%;
+    height: 10vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-btn{
+    background-color: #ffcd6c;
+    width: 120px;
+    height: 50px;
+    border-radius: .4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.title-box{
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13rem;
+}
+.title-box .YOUR-ADDITIONAL-SERVICES{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: black;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.title-box hr{
+    margin-top: .5rem;
+    width: 10vw;
+}
+.advanced-service-options{
+    margin-top: 1rem;
+    width: 70%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.SERVICES-MOBILE{
+    display: none;
+}
+.MOB-SERVICES-SIDEBAR-HIDE{
+    display: none;
+}
+.MOB-SERVICES-SIDEBAR-SHOW{
+    display: block;
+}
+
+@media(max-width:600px){
+    .services-wrapper{
+        display: none;
+    }
+    .SERVICES-MOBILE{
+        display: flex;
+        max-width: 600px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .services-cont{
+        position: static;
+        top: 0vh;
+        left: 0%;
+        width: 100%;
+        min-height:84.5%;
+        display: flex;
+        background-color: #f1f2f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid blue; */
+    }
+    .services{
+        border-radius: 1rem;
+        position: static;
+        top: 0%;
+        right: 0%;
+        min-height: 90%;
+        /* border: 2px solid black; */
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+    .services-top{
+        height: 15vh;
+    }
+    .services-top .YOUR_SERVICES{
+        font-size: 1rem;
+        font-weight: 400;
+        color: black;
+    }
+    p{
+        text-align: center;
+        width: 70%;
+        color: #8b9b9f;
+        word-spacing: 5px;
+        font-size: .7rem;
+        word-spacing: 0px;
+    }
+    .service-options{
+        width: 90%;
+        grid-template-columns: repeat(2, 180px);
+        /* border: 2px solid black; */
+    }
+    .service-option{
+        margin: 1rem;
+        border: 2px solid #8b9b9f;
+        height: 20vh;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .edit-btn{
+        position: static;
+        width: 80%;
+        height: 40px;
+        border-radius: 1rem;
+        font-size: .9rem;
+    }
+    .sexual-crimes, .internet-crimes{
+        width: 40%;
+        /* border: 2px solid yellow; */
+    }
+    .addidtinal-services-title{
+        margin-top: .5rem;
+        width: 90%;
+        height: 10vh;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title-box {
+        /* border: 2px solid violet; */
+        width: 100%;
+        margin-left: 0px;
+    }
+    .title-box .YOUR-ADDITIONAL-SERVICES{
+        font-size: 1rem;
+        /* border: 2px solid salmon; */
+        width: 100%;
+        color: black;
+    }
+    .advanced-service-options{
+        margin-top: 1rem;
+        width: 90%;
+        /* border: 2px solid black; */
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .add-btn{
+        position: static;
+        width: 80%;
+        height: 40px;
+        border-radius: 1rem;
+        font-size: .9rem;
+    }
+
+}

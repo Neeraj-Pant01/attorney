@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.infocard-wrapper{
+    width: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    animation: animate .5s linear;
+}
+.infoCard{
+    /* border: 2px solid black; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.infoCard img{
+    width: 80%;
+}
+.infocard-title{
+    /* border: 2px solid gold; */
+    text-align: center;
+    width: 90%;
+}
+.infocard-title p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    color: black;
+}
+.infocard-title span{
+    font-size: 1rem;
+    color: #333333;
+    font-weight: lighter;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(-400px)
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

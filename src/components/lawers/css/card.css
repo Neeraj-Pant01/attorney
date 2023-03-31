@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-wrapper{
+    width: 30vw;
+    /* border: 2px solid blue; */
+    min-height: 18vh;
+    box-shadow: 0px 0px 10px #888888;;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+.card-top{
+    margin-top: .5rem;
+    display: flex;
+    text-align: center;
+    /* border: 2px solid gold; */
+    /* justify-content: space-evenly; */
+}
+.card-top .ap-req{
+    margin: 0rem 1rem;
+    font-size: .9rem;
+    /* border: 2px solid black; */
+    width: 30%;
+    text-align: start;
+}
+.card-top span{
+    margin-right: 1rem;
+    font-size: .8rem;
+    /* border: 2px solid blue; */
+    width: fit-content;
+    text-align: start;
+}
+.charge{
+    text-align: end;
+    /* border: 2px solid green; */
+    width: 20%;
+    margin-left: 2.5rem;
+}
+.charge p{
+    text-align: end;
+    font-size: .7rem;
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.card-desc{
+    display: flex;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+.card-img{
+    margin-left: .5rem;
+    flex:4;
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img img{
+    width: 50px;
+}
+.card-details{
+    margin-left: .5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-details .lawers-city{
+    font-size: .8rem;
+    /* border: 2px solid yellow; */
+    text-align: start;
+}
+.card-details b{
+    font-size: .9srem;
+    /* border: 2px solid yellow; */
+    width: 100%;
+}
+.card-navigation{
+    display: flex;
+    margin-top: 10.5px;
+    width: 100%;
+    height: 60%;
+    /* border: 2px solid gold; */
+}
+.accept{
+    flex: 5;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #F0F1F2;
+    outline: none;
+    border: none;
+    border-right: 1px solid #888888;
+    padding: .6rem;
+    cursor: pointer;
+}
+.decline{
+    padding: .5rem;
+    flex:5;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #888888;
+    background-color: #F0F1F2;
+    border: none;
+    border-left: 1px solid #888888;
+    cursor: pointer;
+}
+.BsFillInfoCircleFill{
+    color: black;
+    float: right;
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.card-desc{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    position: relative;
+}
+.REQ-ACCEPTED{
+    display: flex;
+    margin-top: 10.5px;
+    width: 100%;
+    height: 60%;
+    /* border: 2px solid gold; */
+}
+.ACCEPTED{
+    flex: 5;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #F0F1F2;
+    outline: none;
+    border: none;
+    padding: .6rem;
+    cursor: pointer;
+    color: green;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    animation: accpt 1s linear;
+}
+.AiOutlineCheck{
+    background-color: transparent;
+    /* border: 2px solid black; */
+    margin-right: 1rem;
+}
+.mob-bs{
+    display: none;
+}
+@keyframes accpt {
+    0%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.MobCard{
+    display: none;
+}
+@media(max-width:600px){
+    .card-wrapper{
+        width: 94vw;
+        /* border: 2px solid green; */
+        /* display: block; */
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .card-top .ap-req {
+        font-size: .6rem;
+    }
+    .card-top span{
+        font-size: .5rem;
+    }
+    .card-details b{
+        font-size: .7rem;
+    }
+    .MobCard{
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        /* border: 2px solid green; */
+        flex-direction: column;
+    }
+    .mob-wc{
+        height: 40%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .mob-wc span{
+        /* border: 2px solid brown; */
+        width: fit-content;
+        color: black;
+    }
+    .mob-name{
+        height: 40%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .card-navigation{
+        /* border: 2px solid yellow; */
+        margin-top: 29px;
+        margin-bottom: 0px;
+        height: 80%;
+    }
+    .BsFillInfoCircleFill{
+        display: none;
+    }
+    .mob-bs{
+        display: block;
+        color: black;
+        float: right;
+        /* border: 2px solid red; */
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        font-size: .9rem;
+    }
+    .charge b{
+        font-size: .7rem;
+    }
+    .lawers-city{
+        font-size: .6rem;
+    }
+}

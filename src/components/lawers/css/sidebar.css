@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+.sidebar-icons{
+    color: black;
+    color: #817f7f;
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-right:0rem;
+}
+
+.sidebar{
+    margin-top: 5.6rem;
+    width: 20%;
+    /* border:2px solid red; */
+
+    height: calc(100vh - 16vh);
+    position: fixed;
+    top: 1rem;
+    z-index: 3;
+}
+.side-hr{
+    position: absolute;
+    width: 5px;
+    height: 93%;
+    background-color: #C79128;
+    right: 0;
+    border-radius: 1rem;
+    display: block;
+}
+.list{
+    position: relative;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    text-align: center;
+    margin-top: .3rem;
+    margin-bottom: .2rem;
+    padding: .2rem 0rem;
+}
+.list li{
+    text-decoration: none;
+    list-style: none;
+    color: #A7A7A7;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    /* border: 2px solid yellow; */
+    /* padding-right: 3rem; */
+    width: 96%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.bggrd{
+        box-shadow: 10px 4px 8px #888888;
+    color: black;
+    transition: all .5s linear;
+}
+.bggrd li{
+    border-right:5px solid #C79128;
+    color: black;
+    border-radius: 2%;
+    justify-content: center;
+}
+.bggrd a{
+    width: fit-content;
+    color: black;
+}
+.bggrd .sidebar-icons{
+    color:#C79128;
+}
+.bggrd a{
+    color: black;
+}
+
+.list a{
+    width: 50%;
+    /* border: 2px solid blue; */
+    text-decoration: none;
+    color: #A7A7A7;
+}
+.blank{
+    /* background-color: yellow; */
+    position: relative;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+    box-shadow: 0px 0px 10px #888888;
+
+}
+.blank li{
+    text-decoration: none;
+    list-style: none;
+    color: #A7A7A7;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    /* border: 2px solid yellow; */
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.blank li a{
+    text-decoration: none;
+    color: #A7A7A7;
+    color: black;
+}
+
+.blank .sidebar-icons{
+    color: black;
+}
+
+
+.CLICKED{
+    position: relative;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+    box-shadow: 0px 0px 10px #888888;
+}
+.CLICKED li {
+    list-style: none;
+    color: #A7A7A7;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    /* border: 2px solid yellow; */
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.CLICKED li a{
+    text-decoration: none;
+    color: #A7A7A7;
+}
+
+.logout{
+    position: absolute;
+    display: block;
+    width: 70%;
+    margin: auto;
+    background-color: #191A1F;
+    color: white;
+    bottom: 2rem;
+    left: 15%;
+    padding: .8rem 0rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: #707070;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.SIDEBAR-USER-INFO{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    border-bottom: 10px solid #e4e4e4;;
+    display: none;
+    margin-bottom: 1rem;
+}
+.FaArrowRight{
+    font-size: 1.5rem;
+    display: none;
+}
+.logout-icon{
+    background-color: #191A1F;
+    text-align: center;
+    transform: rotate(-90deg);
+    padding-right: .5rem;
+}
+.SIDEBAR-FOOTER{
+    width: 100%;
+    height: 25vh;
+    /* border: 2px solid brown; */
+    display: none;
+}
+.USER-LOGOUT{
+    width: 100%;
+    height: 25vh;
+    /* border: 2px solid yellow; */
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.USER-LOGOUT-BTN{
+    width: 70%;
+    border: 2px solid #c1945c;
+    color: #c1945c;
+    height: 30%;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+.mob-list-wrapper{
+    display: none;
+}
+@media(max-width:600px){
+    .list-wrapper{
+        display: none;
+    }
+    .sidebar{
+        position: static;
+        height: 100vh;
+        width: 100%;
+        border-bottom: 15px solid #e4e4e4;;
+    }
+    .SIDEBAR-USER-INFO{
+        display: block;
+        margin-bottom: 0px;
+        /* background-color: #e4e4e4;; */
+    }
+    .mob-list-wrapper{
+        display: block;
+        margin-top: 0px;
+        /* border: 2px solid orangered; */
+        height: 55vh;
+    }
+    .list{
+        border-bottom: 3px solid #e4e4e4;
+        color: black;
+        height: 10%;
+    }
+    .list li{
+        color: black;
+        font-weight: 600;
+        font-size: .8rem;
+        
+    }
+    .logout{
+        position: static;
+    }
+    .FaArrowRight{
+        display: block;
+    }
+    .sidebar-icons{
+        font-size: 1.5rem;
+    }
+    .PROFILE-PIC-USER{
+        width: 50%;
+        height: 50%;
+        /* border: 2px solid lightseagreen; */
+        display: block;
+        margin: auto;
+    }
+    .PROFILE-PIC-USER img{
+        margin-top: 2rem;
+        height: 70%;
+        border-radius: 1rem;
+    }
+    .SIDEBAR-PROFILE-INFO p{
+        /* border: 2px solid navy; */
+    }
+    .MOB-USER-GENDER{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .MAIL-mob{
+        border-left: 2px solid gray;
+        padding-left: .5rem;
+    }
+    .SIDEBAR-USER-NAME{
+        font-size: 1.5rem;
+        width: 100%;
+        color: black;
+        margin-bottom: .3rem;
+    }
+    .sidebar-icons{
+        font-size: 1rem;
+    }
+    .USER-NO-MAIL, .USER-ADD, .USER-GENDER{
+        width: 100%;
+        margin-bottom: .5rem;
+        /* border: 2px solid red; */
+    }
+    .USER-NO-MAIL > span{
+        margin-right: 1rem;
+    }
+    .logout{
+        display: none;
+    }
+    .SIDEBAR-FOOTER{
+        display: block;
+        align-items: center;
+    }
+    .FOOTER-LINKS{
+        list-style: none;
+        font-size: 1.2rem;
+        margin: 1rem 3rem;
+    }
+    .USER-LOGOUT{
+        display: flex;
+    }
+    .CLICKED{
+        border-bottom: 3px solid #e4e4e4;
+        color: black;
+        height: 10%;
+    }
+    .CLICKED li{
+        color: black;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+}

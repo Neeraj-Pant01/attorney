@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.login{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+.login-cont{
+    width: 100vw;
+    /* height: 230vh; */
+    /* border: 2px solid red; */
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.login-img{
+    background-image: url("../../../public/assets/login.svg");
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid red; */
+    background-size: cover;
+    position: relative;
+}
+
+.login-logo{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    opacity: .7;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.logo{
+    height: 100%;
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    background-color: transparent;
+}
+.logo-img{
+    width: 50%;
+    background-color: transparent;
+}
+.login-box{
+    height: 60%;
+    width: 15%;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+    float: right;
+    margin-right: 12%;
+    background-color: #4B565F;
+    text-align: center;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.LOG-IN{
+    background-color: transparent;
+}
+.sign-up-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 28vh;
+    position: absolute;
+    top: 34%;
+    background-color: transparent;
+    /* border: 2px solid red; */
+    
+}
+.signup-form{
+    width: 90%;
+    height: 98%;
+    border: 2px solid gray;
+    display: flex;
+    background-color: white;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.mobile{
+    flex: 3;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+    /* background: linear-gradient(rgb(236, 227, 227),white); */
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    height: 60%;
+    border-right: 2px solid  gray;;
+}
+.name{
+    flex: 3;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    border-right: 2px solid  gray;;
+    /* background:linear-gradient(rgb(212, 209, 209), white); */
+}
+.signUp{
+    flex:4;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background:linear-gradient(rgb(155, 155, 155), white); */
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 80%;
+}
+.mobile-radio{
+    width: 60%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+}
+.mobile-radio p{
+    text-align: left;
+    width: 100%;
+}
+.mobile-radio input{
+    margin-left: 2rem;
+    width: 20px;
+    height: 20px;
+}
+.login-input-field{
+    width: 100%;
+    /* border: 2px solid yellow; */
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-input-field input{
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+    width: 60%;
+    border: .2px solid #707070;
+    outline: none;
+}
+.radio-name{
+    font-size: 1.4rem;
+    font-weight: 800;
+    /* border: 2px solid orange; */
+    width: 100%;
+    text-align: left;
+    padding-bottom: .5rem;
+}
+.hr{
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: #323232;
+    transform: rotate(90deg);
+    right: -3.7rem;
+    z-index: 100;
+}
+.sign-up-btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* border: 2px solid red; */
+    
+}
+.signup-btn{
+    width: 60%;
+    font-size: 1.4rem;
+    background-color: #FFCD6C;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    /* border:  2px solid blue; */
+    height: fit-content;
+}
+.signup-info-box{
+    /* border: 2px solid red; */
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+}
+.signup-info-box input{
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.t-c{
+    /* padding-left: 1rem; */
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    /* border: 2px solid blue; */
+}
+.vision{
+    width: 100%;
+    height: 70vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vision-mission-img{
+    margin-top: 10%;
+    margin-bottom: 2rem;
+}
+.vision-mission-info{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 8rem;
+    color: #707070;
+    margin-top: 2rem;
+}
+.vision-mission-title h1{
+    margin-bottom: 1rem;
+}
+.vision-mission-hr{
+    width: 60%;
+    height: 2px;
+    background-color: #C1945C;
+    margin: auto;
+}
+.mission{
+    width: 100%;
+    height: 50vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F8F5;
+}
+.mission-title{
+    background-color: transparent;
+}
+.mission-title h1{
+    background-color: transparent;
+}
+.m-info p{
+    padding: 1rem 0;
+    /* border: 2px solid black; */
+}
+.m-info{
+    margin-bottom: 2rem;
+    /* border: 2px solid black; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+@media(max-width:600px){
+    .login-img{
+        height: 30vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .login-box{
+        width: 20%;
+        height: 40%;
+        margin-top: .5rem;
+        border-radius: 1rem;
+    }
+    .login-box h1{
+        font-size: .8rem;
+    }
+    .login-cont{
+        height: 170vh;
+    }
+    .sign-up-wrapper{
+        /* border: 2px solid red; */
+        top: 11%;
+        height: 50vh;
+    }
+    .signup-form{
+        flex-direction: column;
+        height: 98%;
+        border-radius: 10px;
+    }
+    .mobile, .name ,.signUp{
+        height: 20%;
+        border: none;
+        /* border: 2px solid red; */
+        width: 90%;
+    }
+    .login-input-field input{
+        height: 20%;
+    }
+    .radio-name{
+        color: black;
+        font-size: 1rem;
+    }
+    .signup-btn{
+        width: 80%;
+        height: 7vh;
+        font-size: 1.2rem;
+        padding-top: .5rem;
+    }
+    .signup-info-box{
+        width: 80%;
+    }
+    .t-c{
+        width: 90%;
+        /* border: 2px solid palegreen; */
+        font-size: .8rem;
+    }
+    .vision{
+        margin-top: 10rem;
+    }
+    .vision-mission-title{
+        /* border: 2px solid yellow; */
+        font-size: .7rem;
+    }
+    .vision-mission-info{
+        /* border: 2px solid crimson; */
+    }
+    .vision-mission-info p{
+        width: 90%;
+        font-size: .7rem;
+    }
+    .vision-mission-img img{
+        width: 50px;
+    }
+    .mission{
+        height: 50vh;
+    }
+    .mission-img img{
+        width: 50px;
+    }
+    .mission-title h1{
+        font-size: 1.3rem;
+    }
+    .m-info{
+        /* border: 2px solid red; */
+    }
+    .m-info p{
+        font-size: .7rem;
+        width: 90%;
+    }
+}

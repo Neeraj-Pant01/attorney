@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.userinfo-wrapper{
+    width: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    background-color: #f3f5ff;
+    animation: animate .5s linear;
+}
+.userinfo-top{
+    width: 100%;
+    /* border: 2px solid black; */
+    border-bottom-right-radius: 5rem;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mob-BsArrowLeft:first-child{
+    align-self:flex-start;
+    /* background-color: red; */
+    float: left;
+}
+.mob-BsArrowLeft{
+    display: none;
+}
+.req-date{
+    width: 100%;
+    font-size: 2rem;
+    color: black;
+}
+.req-time{
+    width: 100%;
+    font-size: 1.7rem;
+    color: black;
+}
+.user-PROFILE{
+    width: 100%;
+    height: 70vh;
+    background-color: #f3f5ff;
+    position: relative;
+}
+.user-PROFILE-wrapper{
+    /* border: 2px solid blue; */
+    height: 83%;
+    margin-top: 15%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-NAME-CHARGE{
+    width: 80%;
+    height: 25%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.CLIENT-IMG{
+    /* border: 2px solid olivedrab; */
+    width: 80%;
+    height: 20vh;
+    background-color: transparent;
+    position: absolute;
+    top: 20%;
+    z-index: 20;
+}
+.CLIENT-IMG img{
+    height: 96%;
+    border-radius: 5px;
+}
+.USER-NAME{
+    width: 40%;
+    /* border: 2px solid blue; */
+    height: 100%;
+    font-size: .9rem;
+    background-color: transparent;
+}
+.USER-NAME h1{
+    background-color: transparent;
+}
+.USER-CHARGE{
+    width: 30%;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.USER-CHARGE p{
+    width: 90%;
+    text-align: center;
+    background-color: transparent;
+}
+.USER-CHARGE h1{
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+.USER-CONTACT-INFO{
+    width: 80%;
+    height: 20%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+.USER-MOB, .USER-MAIL, .USER-ADRESS, .USER-GENDER{
+    background-color: transparent;
+    width: 100%;
+    text-align: start;
+}
+.USER-MSG{
+    width: 100%;
+    height: 33%;
+    /* border: 2px solid red; */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.USER-MSG-WRAPPER{
+    width: 75%;
+    height: 90%;
+    background-color: #fff5e1;
+    padding: .3rem 1rem;
+    border-radius:1rem ;
+}
+.USER-MESSAGE{
+    margin-bottom: .5rem;
+}
+.USER-MESSAGE, .USER-HELLO, .USER-CASE-INFO{
+    width: 100%;
+    text-align: start;
+    background-color: transparent;
+    font-size: .8rem;
+}
+
+.CASE-REPORT{
+    border-radius: 1rem;
+    width: 90%;
+    background-color:#e9d5b0;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+    min-height: 20%;
+    margin-left: 5%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+
+}
+.CASE-REPORT b,.CASE-REPORT p{
+    background-color: transparent;
+    text-align: start;
+    padding-left: 2rem;
+    font-size: .9rem;
+}
+.CASE-REPORT p{
+    font-size: .7rem;
+    padding-bottom: .3rem;
+}
+.USER-REQ-OPTIONS{
+    width: 80%;
+    height: 15%;
+    /* border: 2px solid orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-top: .3rem;
+}
+.ACCEPT, .DECLINE{
+width: 50%;
+height: 100%;
+/* border: 2px solid green; */
+border: none;
+outline: none;
+height: 90%;
+cursor: pointer;
+}
+.ACCEPT{
+    border-right: 2px solid #bdbdbd;
+    color: black;
+    font-weight: 600;
+}
+.DECLINE{
+    color: #888888;
+    font-weight: 600;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(400px)
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.USER-CONTACT-OPTIONS{
+    width: 80%;
+    height: 15%;
+    /* border: 2px solid orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    margin-top: .7rem;
+    color: #c79128;
+    font-size: 1.4rem;
+    background-color: transparent;
+    animation: showIcons .7s linear;
+}
+.USER-CONTACT-OPTIONS a{
+    /* border: 2px solid black; */
+    width: 15%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0px 1px 2px #888888;
+    color: #c79128;
+}
+.mob-mob-info{
+    display: none;
+}
+
+/* .USER-CONTACT-OPTION{
+    display: flex;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 0rem 0rem;
+    cursor: pointer;
+    border: 2px solid red;
+}
+a .USER-CONTACT-OPTIONS{
+    border-radius: .5rem;
+    color: #c79128;
+    text-decoration: none;
+    padding: 0rem 0rem;
+    box-shadow: 0px 1px 2px #888888;
+} */
+
+@keyframes showIcons{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (max-width:600px){
+    .mob-BsArrowLeft{
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+    }
+    .CLIENT-IMG{
+        /* border: 2px solid brown; */
+        top: 23%;
+        height: 12vh;
+    }
+    .CLIENT-IMG img{
+        height: 95%;
+    }
+    .userinfo-top p{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .mob-appointment{
+        color: black;
+        margin-left: 23%;
+    }
+    .mob-mob-info{
+        display: flex;
+        width: 80%;
+        /* border: 2px solid yellow; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .USER-NAME h1{
+        font-size: 1.3rem;
+    }
+    .USER-CHARGE h1{
+        font-size: 1.2rem;
+    }
+    .USER-CONTACT-INFO{
+        /* border: 2px solid red; */
+    }
+    .USER-CONTACT-INFO{
+        font-size: .8rem;
+    }
+    .USER-GENDER{
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .CASE-REPORT{
+        /* border: 2px solid red; */
+        padding-top: .3rem;
+    }
+    .USER-MSG-WRAPPER p{
+        font-size: .7rem;
+        color: black;
+    }
+    .CASE-REPORT b{
+        padding-bottom: .1rem;
+        font-size: .8rem;
+        font-weight: lighter;
+        color: rgba(36, 35, 35, 0.678);
+    }
+    .CASE-REPORT p{
+        color: grey;
+    }
+
+}

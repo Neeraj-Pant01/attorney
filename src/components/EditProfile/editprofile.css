@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    font-size: 1rem;
+}
+.editprofile{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.editprofile-cont{
+    background-color: #f1f2f6;
+    /* border: 2px solid yellow; */
+    width: 80vw;
+    display: block;
+    margin-left: 20%;
+    margin-top: 7.3%;
+    min-height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.editprofile-wrapper{
+    /* border: 2px solid red; */
+    width: 90%;
+    /* height: 190vh; */
+    margin: 1rem 0rem;
+    border-radius: 1rem;
+}
+.editprofile-title{
+    /* border: 2px solid green; */
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+.PROFILE-IMAGE-CONT{
+    height: 15%;
+    /* border: 2px solid tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.PROFILE-IMAGE{
+    width: 200px;
+    border: 4px solid grey;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+.PROFILE-IMAGE img{
+    height: 100%;
+}
+.EDIT-PROFILE-FORM{
+    width: 100%;
+    /* border: 2px solid brown; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.e-p-f{
+    display: block;
+    margin: auto;
+    width: 70%;
+    /* border: 2px solid green; */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.e-p-f-i{
+    height: 7vh;
+}
+.s-z-f{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    /* border: 2px solid red; */
+    margin-bottom: 1rem;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+.c-e-f{
+    width: 44%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.e-f{
+    height: 7vh;
+}
+.M-F-f{
+    border: 2px solid #9f9f9f;
+    /* border: 2px solid red; */
+    display: flex;
+    margin: auto;
+    width: 58%;
+    margin-bottom: 1.5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .7rem;
+}
+.FORM-I-TITLE{
+    margin-bottom: .5rem;
+    /* border: 2px solid yellow; */
+    width: 80%;
+    padding: 0rem 1rem;
+}
+.MALE, .FEMALE{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    /* border: 2px solid orange; */
+    margin-top: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.MALE:hover, .FEMALE:hover{
+    background-color: #ffcd6c;
+    color: black;
+}
+.GENDER-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    /* border: 2px solid green; */
+}
+.BIO{
+    width: 70%;
+    padding: 2rem;
+    resize: none;
+    outline: none;
+    border: 2px solid #9f9f9f;
+    border-radius: 1rem;
+}
+.BIO-CONT{
+    border: none;
+    width: 70%;
+    /* border: 2px solid green; */
+}
+.e-p-f-b{
+    margin-top: 2rem;
+    height: 10vh;
+    /* border: 2px solid brown; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.SAVE{
+    width: 30%;
+    height: 90%;
+    border-radius: 1rem;
+    background-color: #ffcd6c;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.MobEditProfile{
+    display: none;
+}
+.p-AiFillCamera{
+    font-size: 2rem;
+    border: 2px solid grey;
+    border-radius: 50%;
+    padding: .3rem;
+    color: gray;
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    cursor: pointer;
+}
+@media(max-width:600px){
+    .editprofile{
+        display: none;
+    }
+    .MobEditProfile{
+        display: block;
+        /* margin-left: 10%; */
+    }
+    .editprofile-cont{
+        margin-left: 0%;
+        box-shadow: none;
+        width: 100%;
+        margin-top: 0%;
+    }
+    .editprofile-title{
+        position: relative;
+        font-size: 1rem;
+        /* border: 2px solid red; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 5vh;
+        margin-top: 0px;
+    }
+    .PROFILE-IMAGE-CONT{
+        /* border: 2px solid salmon; */
+        height: 10%;
+    }
+    .PROFILE-IMAGE{
+        height: 90px;
+        width: 90px;
+        border: 4px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .FORM-I-TITLE{
+        font-size: .9rem;
+    }
+    .e-p-f-i{
+        width: 80%;
+        height: 5vh;
+        border: 1px solid black;
+        color: black;
+    }
+    .e-f{
+        width: 60%;
+        height: 4vh;
+        border: 1px solid black;
+        color: black;
+    }
+    .MALE, .FEMALE{
+        font-size: .7rem;
+        height: 50%;
+        padding: 0;
+        padding: 2px 0px;
+        margin-top: 0px;
+        margin-top: .5rem;
+    }
+    .M-F-f{
+        height: 7vh;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+        
+    }
+    .GENDER-f{
+        height: 90%;
+    }
+    .BIO-CONT{
+        margin-top: .7rem;
+        width: 70%;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .BIO{
+        border-radius: 0%;
+        width: 70%;
+        height: 10vh;
+    }
+    .SAVE{
+        font-size: .9rem;
+        height: 60%;
+    }
+    .e-p-f{
+        /* border: 2px solid blue; */
+    }
+    .AiOutlineArrowLeft-mob-ep{
+        position: absolute;
+        left: 0%;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
